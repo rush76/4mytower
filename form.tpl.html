@@ -1,0 +1,38 @@
+<html>
+<head>
+    <style>
+        .uploadform {
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            width: 25%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .uploadform label {
+            margin: 1em;
+            font-size: 1.5em;
+            display: inline-block;
+        }
+
+        .uploadform input {
+            border: 1px solid #CACACA;
+            border-radius: 0.5em;
+            padding: 0.5em;
+            margin: 0.5em;
+            width: 100%;
+        }
+    </style>
+</head>    
+<body>
+  <div class="uploadform">
+       <form action="{ACTION}" method="POST" enctype="multipart/form-data">
+            <label>please choose file</label><br><input type="file" name="uplodadedfile"><input type="submit" name="submit" value="Upload">
+
+        </form>
+    </div>
+</body>
+</html>
